@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whizkle</title>
+    <link rel="shortcut icon" href="../img/logo/logo.png" />
+    <link rel="stylesheet" href="../css/LoginCss/loginStyles.css">
+    <link rel="stylesheet" href="../css/LoginCss/loginResponsive.css">
+    <link rel="stylesheet" href="../css/plugins/all.min.css">
+    <link rel="stylesheet" href="../css/plugins/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/loginScript.js" defer></script>
+    <script src="../js/plugins/all.min.js" defer></script>
+    <script src="../js/plugins/aos.js" defer></script>
+
+    <meta name="author" content="Karo Mkrtchyan" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="yandex-veriﬁcation" content="786f7d0f536b732c" />
+    <meta name="google-site-veriﬁcation" content="rCLLGGTVdEiGe+DXL=" />
+    <meta name="keywords" content="..." />
+    <meta name="description" content="Whizkle Shop" />
+    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noarchive, nosnippet " />
+    <meta http-equiv="Refresh" content="#" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google" value="notranslate">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav_sidebar" id="nav_sidebar">
+            <ul class="sidebar_block">
+                <li class="sidebar_list sidebar_active"><i class="fa-solid fa-house sidebar_icon"></i><a
+                        href="Login.html" class="sidebar_link disable_select sidebar_link_active">Home</a></li>
+                <li class="sidebar_list"><i class="fa-solid fa-address-card sidebar_icon"></i><a href="About.html"
+                        class="sidebar_link disable_select">About</a></li>
+                <li class="sidebar_list"><i class="fa-solid fa-shop sidebar_icon"></i><a href="Shop.html"
+                        class="sidebar_link disable_select">Shop</a></li>
+                <li class="sidebar_list"><i class="fa-solid fa-comment sidebar_icon"></i><a href="Contact.html"
+                        class="sidebar_link disable_select">Contact</a></li>
+                <li class="sidebar_list"><i class="fa-brands fa-square-instagram sidebar_icon"></i><a href="Blog.html"
+                        class="sidebar_link disable_select">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="search_header" id="search_header">
+            <div class="search_header_container">
+                <form action="#" class="search_header_form">
+                    <nav class="search_nav">
+                        <li class="search_header_nav_list"><a href="#" class="search_header_nav_link"><input type="text"
+                                    id="search_header_input" class="search_header_input" placeholder="Search"></a></li>
+                        <li class="search_header_nav_list"><a href="#" class="search_header_nav_link"
+                                onclick="closeSearch()"><i class="fa-solid fa-xmark search_close_icon"></i></a></li>
+                    </nav>
+                    <ul class="search_header_submenu_block" id="search_header_submenu_block">
+                        <div class="search_header_submenu_block_container">
+                            <li class="search_header_submenu_block_list">
+                                <div class="search_header_product1">
+                                    <a href="Product.html" class="search_header_product1_link">
+                                        <figure class="search_header_product1_figure">
+                                            <img src="../img/product/slash.jpg" alt="Product"
+                                                class="search_header_product1_img">
+                                        </figure>
+                                        <div class="search_header_product1_text_block">
+                                            <h2 class="search_header_product1_text_block_item1">Gym videocourse
+                                            </h2>
+                                            <div class="search_header_product1_text_block_item2">2$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <header class="header" id="header">
+            <div class="header_container">
+                <nav>
+                    <li class="img_link_box">
+                        <img src="../img/icon/MenuIcon.png" alt="lines" id="lines" class="lines disable_select"
+                            onclick="openNav()">
+                        <a href="javascript:void(0)" id="close" class="nav_close_link" onclick="closeNav()"><i
+                                class="fa-solid fa-xmark"></i></a>
+                    </li>
+                    <ul class="nav_block disable_select">
+                        <li class="nav_list"><a href="Login.html" class="nav_link active">Home</a></li>
+                        <li class="nav_list"><a href="About.html" class="nav_link">About</a></li>
+                        <li class="nav_list"><a href="Shop.html" class="nav_link">Shop</a></li>
+                        <li class="nav_list"><a href="Contact.html" class="nav_link">Contact</a></li>
+                        <li class="nav_list"><a href="Blog.html" class="nav_link">Blog</a></li>
+                    </ul>
+                    <ul class="logo_block">
+                        <li class="logo_list"><a href="Login.html" class="logo_link disable_select">Whizkle</a></li>
+                    </ul>
+                    <ul class="search_block">
+                        <li class="search_list"><a href="#" class="search_link custom" onclick="openSearch()"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="search_list"><a href="#" class="search_link"><i
+                                    class="fa-solid fa-cart-shopping cart"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main" onclick="closeSideBar()" class="main">
+            <section class="section_shop">
+                <article class="article_shop">
+                    <div class="container">
+                        <div class="shop_text_block" data-aos="fade-up" data-aos-duration="700">
+                            <h2 class="shop_item1 disable_select">Browse our products</h2>
+                            <button class="cssbuttons-io-button disable_select">
+                                Shop
+                                <a href="Shop.html" class="cssbuttons-link">
+                                    <div class="icon">
+                                        <svg height="24" width="24" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                                fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </button>
+                            <button class="cssbutton_media">
+                                <a href="Shop.html" class="cssbutton_media_link">
+                                    Shop
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="section_email">
+                <article class="article_email">
+                    <div class="container" data-aos="fade-up" data-aos-duration="700">
+                        <form action="Shop.html" method="post" class="form">
+                            <div class="email_block">
+                                <h2 class="email_block_item1 disable_select">Subscribe to our emails</h2>
+                                <div class="email_input_btn_block">
+                                    <div class="inputGroup">
+                                        <input type="text" required="" autocomplete="off" id="email_input">
+                                        <label for="email_input" class="disable_select">Email</label>
+                                    </div>
+                                    <button class="email_block_btn" type="submit"><i
+                                            class="fa-solid fa-arrow-right arrow_right"></i></button>
+                                </div>
+                            </div>
+                            <div class="email_search_block">
+                                <ul class="email_nav_block">
+                                    <li class="email_nav_list custom_list"><a href="#" class="email_nav_link"><i
+                                                class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="email_nav_list"><a href="#" class="email_nav_link"><i
+                                                class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer" id="footer" onclick="closeSideBar()">
+            <div class="footer_container" data-aos="fade-up" data-aos-duration="700">
+                <div class="footer_text_block">
+                    <h2 class="footer_text_block_item1 disable_select">Our shop supports</h2>
+                </div>
+                <div class="footer_card_block disable_select">
+                    <figure class="apple_pay">
+                        <img src="../img/icon/applePay.png" alt="Apple Pay Img" class="apple_pay_img">
+                    </figure>
+                    <figure class="visa">
+                        <img src="../img/icon/visa.png" alt="Visa Img" class="visa_img">
+                    </figure>
+                    <figure class="mastercard">
+                        <img src="../img/icon/mastercard.png" alt="Mastercard Img" class="mastercard_img">
+                    </figure>
+                    <figure class="paypal">
+                        <img src="../img/icon/paypal.png" alt="Paypal Img" class="paypal_img">
+                    </figure>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

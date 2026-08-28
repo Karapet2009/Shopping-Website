@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whizkle Shop</title>
+    <link rel="shortcut icon" href="../img/logo/logo.png" />
+    <link rel="stylesheet" href="../css/ShopCss/shopStyles.css">
+    <link rel="stylesheet" href="../css/ShopCss/shopResponsive.css">
+    <link rel="stylesheet" href="../css/plugins/all.min.css">
+    <link rel="stylesheet" href="../css/plugins/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/shopScript.js" defer></script>
+    <script src="../js/plugins/all.min.js" defer></script>
+    <script src="../js/plugins/aos.js" defer></script>
+
+    <meta name="author" content="Karo Mkrtchyan" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="yandex-veriﬁcation" content="786f7d0f536b732c" />
+    <meta name="google-site-veriﬁcation" content="rCLLGGTVdEiGe+DXL=" />
+    <meta name="keywords" content="..." />
+    <meta name="description" content="Whizkle Shop" />
+    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noarchive, nosnippet " />
+    <meta http-equiv="Refresh" content="#" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google" value="notranslate">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav_sidebar" id="nav_sidebar">
+            <ul class="sidebar_block">
+                <li class="sidebar_list"><i class="fa-solid fa-house sidebar_icon"></i><a href="Login.html"
+                        class="sidebar_link disable_select">Home</a></li>
+                <li class="sidebar_list"><i class="fa-solid fa-address-card sidebar_icon"></i><a href="About.html"
+                        class="sidebar_link disable_select">About</a></li>
+                <li class="sidebar_list sidebar_active"><i class="fa-solid fa-shop sidebar_icon"></i><a href="Shop.html"
+                        class="sidebar_link disable_select sidebar_link_active">Shop</a></li>
+                <li class="sidebar_list"><i class="fa-solid fa-comment sidebar_icon"></i><a href="Contact.html"
+                        class="sidebar_link disable_select">Contact</a></li>
+                <li class="sidebar_list"><i class="fa-brands fa-square-instagram sidebar_icon"></i><a href="Blog.html"
+                        class="sidebar_link disable_select">Blog</a></li>
+            </ul>
+        </nav>
+        <nav class="nav_filter" id="nav_filter">
+            <a href="#" class="nav_filter_close" id="nav_filter_close" onclick="closePrice()"><i
+                    class="fa-solid fa-xmark filter_close"></i></a>
+            <ul class="sidebar_filter_block">
+                <li class="sb_filter_list">
+                    <form action="#" class="sidebar_price_input_form">
+                        <label class="label_from_input"><input type="number" class="from_input_price_sb"
+                                placeholder="    From" id="min-price-input" value="0"><span
+                                class="dollar_price_style">$</span></label>
+                        <label class="label_to_input"><input type="number" class="to_input_price_sb"
+                                placeholder="    To" id="max-price-input" value="12"><span
+                                class="dollar_price_style">$</span></label>
+                        <form action="Shop.html">
+                            <button class="price_sidebar_reset">
+                                Reset
+                            </button>
+                        </form>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <div class="search_header" id="search_header">
+            <div class="search_header_container">
+                <form action="#" class="search_header_form">
+                    <nav class="search_nav">
+                        <li class="search_header_nav_list"><a href="#" class="search_header_nav_link"><input type="text"
+                                    id="search_header_input" class="search_header_input" placeholder="Search"></a>
+                        </li>
+                        <li class="search_header_nav_list"><a href="#" class="search_header_nav_link"
+                                onclick="closeSearch()"><i class="fa-solid fa-xmark search_close_icon"
+                                    id="iconnn"></i></a></li>
+                    </nav>
+                    <ul class="search_header_submenu_block" id="search_header_submenu_block">
+                        <div class="search_header_submenu_block_container">
+                            <li class="search_header_submenu_block_list">
+                                <div class="search_header_product1">
+                                    <a href="Product.html" class="search_header_product1_link">
+                                        <figure class="search_header_product1_figure">
+                                            <img src="../img/product/slash.jpg" alt="Product"
+                                                class="search_header_product1_img">
+                                        </figure>
+                                        <div class="search_header_product1_text_block">
+                                            <h2 class="search_header_product1_text_block_item1">Gym videocourse
+                                            </h2>
+                                            <div class="search_header_product1_text_block_item2">2$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <header class="header" id="header">
+            <div class="header_container">
+                <nav class="header_nav">
+                    <li class="img_link_box">
+                        <img src="../img/icon/MenuIcon.png" alt="lines" id="lines" class="lines disable_select"
+                            onclick="openNav()">
+                        <a href="javascript:void(0)" id="close" class="nav_close_link" onclick="closeNav()"><i
+                                class="fa-solid fa-xmark"></i></a>
+                    </li>
+                    <ul class="nav_block disable_select">
+                        <li class="nav_list"><a href="Login.html" class="nav_link">Home</a></li>
+                        <li class="nav_list"><a href="About.html" class="nav_link">About</a></li>
+                        <li class="nav_list"><a href="Shop.html" class="nav_link active">Shop</a></li>
+                        <li class="nav_list"><a href="Contact.html" class="nav_link">Contact</a></li>
+                        <li class="nav_list"><a href="Blog.html" class="nav_link">Blog</a></li>
+                    </ul>
+                    <ul class="logo_block">
+                        <li class="logo_list"><a href="Login.html" class="logo_link disable_select">Whizkle</a></li>
+                    </ul>
+                    <ul class="search_block">
+                        <li class="search_list"><a href="#" class="search_link custom" onclick="openSearch()"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="search_list"><a href="#" class="search_link"><i
+                                    class="fa-solid fa-cart-shopping cart"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main" onclick="closeSideBar()" class="main">
+            <section class="section_products">
+                <article class="article_products">
+                    <div class="container">
+                        <div class="products_text_block disable_select">
+                            <h2 class="products_item1">Products</h2>
+                            <div class="filter_block">
+                                <h2 class="filter_item1">Filter:</h2>
+                                <ul class="filter_price_block">
+                                    <li class="price_list">
+                                        <a href="#" class="price_link" onclick="openPrice()">Price<i
+                                                class="fa-solid fa-chevron-down price_arrow_down"></i></a>
+                                        <div class="price_submenu" id="price">
+                                            <div class="price_submenu_block_one">
+                                                <div class="price_submenu_block_one_text">
+                                                    <h2 class="price_submenu_block_one_item1">The highest price is
+                                                        10$</h2>
+                                                    <a href="Shop.html" class="price_submenu_block_one_item2">Reset</a>
+                                                    <a href="#" class="price_submenu_block_one_item3"
+                                                        onclick="closePrice()"><i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="price_submenu_block_two">
+                                                <form action="#" class="price_input_form">
+                                                    <label class="label_from_input"><input type="number"
+                                                            class="from_input_price" placeholder="    From"
+                                                            id="min-price" value="0"><span
+                                                            class="dollar_price_style">$</span></label>
+                                                    <label class="label_to_input"><input type="number"
+                                                            class="to_input_price" placeholder="    To" id="max-price"
+                                                            value="12"><span class="dollar_price_style">$</span></label>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="products_block">
+                            <div class="product_block1" data-aos="fade-up" data-aos-duration="500">
+                                <div class="product1" data-price="2">
+                                    <a href="Product.html" class="product1_link disable_select">
+                                        <div class="product1_block1">
+                                            <figure class="product1_figure">
+                                                <img src="../img/product/slash.jpg" alt="Product One"
+                                                    class="product1_img">
+                                            </figure>
+                                        </div>
+                                        <div class="product1_block2">
+                                            <h2 class="product1_block2_item1">Gym videocurse</h2>
+                                            <div class="product1_block2_price">2$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product1" data-aos="fade-up" data-aos-duration="700" data-price="5">
+                                    <a href="Product.html" class="product1_link disable_select">
+                                        <div class="product1_block1">
+                                            <figure class="product1_figure">
+                                                <img src="../img/product/slash.jpg" alt="Product One"
+                                                    class="product1_img">
+                                            </figure>
+                                        </div>
+                                        <div class="product1_block2">
+                                            <h2 class="product1_block2_item1">Gym videocurse</h2>
+                                            <div class="product1_block2_price">5$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product_block2">
+                                <div class="product1" data-aos="fade-up" data-aos-duration="1000" data-price="7">
+                                    <a href="Product.html" class="product1_link disable_select">
+                                        <div class="product1_block1">
+                                            <figure class="product1_figure">
+                                                <img src="../img/product/slash.jpg" alt="Product One"
+                                                    class="product1_img">
+                                            </figure>
+                                        </div>
+                                        <div class="product1_block2">
+                                            <h2 class="product1_block2_item1">Gym videocurse</h2>
+                                            <div class="product1_block2_price">7$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product1" data-aos="fade-up" data-aos-duration="1300" data-price="10">
+                                    <a href="Product.html" class="product1_link disable_select">
+                                        <div class="product1_block1">
+                                            <figure class="product1_figure">
+                                                <img src="../img/product/slash.jpg" alt="Product One"
+                                                    class="product1_img">
+                                            </figure>
+                                        </div>
+                                        <div class="product1_block2">
+                                            <h2 class="product1_block2_item1">Gym videocurse</h2>
+                                            <div class="product1_block2_price">10$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="section_email">
+                <article class="article_email">
+                    <div class="container" data-aos="fade-up" data-aos-duration="700">
+                        <form action="#" method="post" class="form">
+                            <div class="email_block">
+                                <h2 class="email_block_item1 disable_select">Subscribe to our emails</h2>
+                                <div class="email_input_btn_block">
+                                    <div class="inputGroup">
+                                        <input type="text" required="" autocomplete="on" id="email_input">
+                                        <label for="email_input" class="disable_select">Email</label>
+                                    </div>
+                                    <button class="email_block_btn" type="submit"><i
+                                            class="fa-solid fa-arrow-right arrow_right"></i></button>
+                                </div>
+                            </div>
+                            <div class="email_search_block">
+                                <ul class="email_nav_block">
+                                    <li class="email_nav_list custom_list"><a href="#" class="email_nav_link"><i
+                                                class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="email_nav_list"><a href="#" class="email_nav_link"><i
+                                                class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer" id="footer" onclick="closeSideBar()">
+            <div class="footer_container" data-aos="fade-up" data-aos-duration="700">
+                <div class="footer_text_block">
+                    <h2 class="footer_text_block_item1 disable_select">Our shop supports</h2>
+                </div>
+                <div class="footer_card_block disable_select">
+                    <figure class="apple_pay">
+                        <img src="../img/icon/applePay.png" alt="Apple Pay Img" class="apple_pay_img">
+                    </figure>
+                    <figure class="visa">
+                        <img src="../img/icon/visa.png" alt="Visa Img" class="visa_img">
+                    </figure>
+                    <figure class="mastercard">
+                        <img src="../img/icon/mastercard.png" alt="Mastercard Img" class="mastercard_img">
+                    </figure>
+                    <figure class="paypal">
+                        <img src="../img/icon/paypal.png" alt="Paypal Img" class="paypal_img">
+                    </figure>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
